@@ -1,0 +1,88 @@
+*, *:after, *:before
+  box-sizing: border-box
+  transition: all .4s ease
+
+html, body
+  height: 100%
+  font: 16px $font
+  line-height: 25px
+  min-width: 1000px
+  min-height: 480px
+  overflow: hidden
+
+main 
+  height: 100%
+  overflow: hidden
+
+a:link,
+a:visited
+  text-decoration: none
+
+h1
+  font-size: em(60)
+  font-weight: 100
+  color: $primary
+  line-height: lem(42)
+  margin-bottom: em(10)
+
+h3
+  font-size: em(32)
+  font-weight: 100
+  color: $primary
+  margin-bottom: em(15)
+
+h4
+  font-size: em(18)
+  font-weight: 300
+  line-height: lem(45)
+  margin-bottom: em(15)
+
+hr
+  width: 50px
+  border-color: $red
+
+p
+  font-size: 1em
+  font-weight: 300
+  color: $primary
+  line-height: em(25)
+  margin-bottom: em(30)
+
+.close
+  width: 170px
+  height: 56px
+  background: $white
+  line-height: 56px
+  font-weight: 300
+  color: $primary
+  text-align: center
+  cursor: pointer
+  position: absolute
+  z-index: 999
+  
+
+  i
+    width: 17px
+    height: 17px
+    background: url(../img/close.png) top center no-repeat
+    display: inline-block
+    font-size: em(18)
+    vertical-align: middle
+    margin-right: 15px
+    transition: none
+
+  &:hover
+    background: $red
+    color: $white
+    i
+      background-position: bottom center
+
+
+%container
+  width: 990px
+  margin: 0 auto
+
+%margin
+  margin-top: 190px
+  margin-bottom: 290px
+

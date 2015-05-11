@@ -1,0 +1,40 @@
+/* Colors */
+
+$background: #e9e9e9
+$primary: #2f2f37
+$white: #fff
+$red: #ee3b3b
+$clay: #cbcbcd
+
+
+
+/* Fonts */
+
+$font: 'Roboto', Arial, sans-serif
+
+.clearfix:after 
+  visibility: hidden
+  display: block
+  font-size: 0
+  content: " "
+  clear: both
+  height: 0
+
+* html .clearfix
+  zoom: 1
+*:first-child + html .clearfix
+  zoom: 1
+
+%contain
+  width: 990px
+  margin: 0 auto
+
+
+@function em($px)
+  @return ($px / 16) * 1em
+
+@function lem($px)
+  @return ($px / 25)
+
+
+

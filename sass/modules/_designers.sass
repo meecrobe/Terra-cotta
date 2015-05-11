@@ -1,0 +1,45 @@
+.designers
+  overflow-y: auto
+
+  &__in
+    @extend .clearfix 
+    background: #f2f2f2 url(../img/girl.png) no-repeat
+    background-position: 162% 0
+    background-size: contain
+
+  &__heading
+    @extend %container
+    margin-top: 190px
+
+  &__girl
+    float: right
+    width: 50%
+    height: 100%
+    
+
+  &__content
+    @extend %container
+
+    p
+      width: 430px
+      padding-top: em(100)
+      margin-bottom: 70px
+
+    &__tags
+      width: 430px
+      padding-bottom: 200px
+
+      &__tag
+        font-size: 1em
+        color: #000
+        border: 2px solid #f1c8c8
+        padding: 0 25px
+        line-height: 43px
+        border-radius: 30px
+        font-weight: 300
+        margin-right: 20px
+        margin-bottom: 20px
+        display: inline-block
+        word-wrap: nowrap
+
+    

@@ -1,0 +1,50 @@
+.main-header
+  position: fixed
+  top: -200px
+  width: 100%
+  background: $primary
+  height: 65px
+  z-index: 9999
+  line-height: 65px
+  text-align: center
+  
+
+  &__main-menu
+    @extend .index__sidebar__main-menu
+    float: none
+    margin-right: 0
+    text-align: left
+
+    &__item
+      @extend .index__sidebar__main-menu__item
+      margin-right: 44px
+
+      &--first
+        margin-right: 0
+
+      &--second
+        margin-right: 15px
+
+      &--logo
+        position: relative
+        width: 123px
+        height: 100%
+        margin: 0 145px
+
+        img
+          position: absolute
+          top: -20px
+          left: 0
+
+      &__soc
+        @extend .index__sidebar__main-menu__item__soc
+
+        &--fb
+          @extend .index__sidebar__main-menu__item__soc--fb
+
+        &--in
+          @extend .index__sidebar__main-menu__item__soc--in
+  
+  &__in
+    @extend %container
+    @extend .clearfix

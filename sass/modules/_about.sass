@@ -1,0 +1,33 @@
+.about
+  overflow-y: auto
+  background: #fff url(../img/about-bg-l.png) left center no-repeat url(../img/about-bg-r.png) right center no-repeat
+
+  &__in
+    @extend %container
+    @extend .clearfix
+    @extend %margin
+
+
+  &__inner__content
+    &__text
+      width: 430px
+      margin-right: 50px
+      float: left
+
+    &__thesis
+      width: 450px
+      float: left
+      list-style: none
+      
+
+      &__item
+        width: 100%
+        padding-left: 78px
+        background: url(../img/thesis.png) left center no-repeat
+        margin-bottom: 120px
+
+        span
+          font-size: em(24)
+          color: $primary
+          line-height: lem(31)
+
